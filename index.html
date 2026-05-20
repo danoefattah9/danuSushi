@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SushiBie - Premium Sushi Modern</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style (3).css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="navbar-logo">
+                <h1>SushiBie 🍣</h1>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#promo">Promo</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="dark-mode-toggle" id="darkModeToggle" title="Dark Mode">🌙</button>
+                <button class="btn-order" id="cartBtn">🛒 Cart</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Sushi Premium Terbaik di Kota</h2>
+                <p class="hero-description">Nikmati pengalaman kuliner Jepang autentik dengan bahan-bahan pilihan terbaik dan presentasi yang memukau.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Pelanggan Puas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Rating</span>
+                    </div>
+                </div>
+                <button class="btn-primary" id="orderNowBtn">Pesan Sekarang</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=500&h=500&fit=crop" alt="Premium Sushi">
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH BAR -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" class="search-input" placeholder="Cari menu sushi favorit Anda...">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Menu Pilihan Kami</h2>
+            <div class="menu-grid" id="menuContainer"></div>
+        </div>
+    </section>
+
+    <!-- PROMO SECTION -->
+    <section class="promo-section" id="promo">
+        <div class="container">
+            <h2 class="section-title">Promo Spesial</h2>
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <div class="promo-icon">🎁</div>
+                    <h3>Buy 1 Get 1</h3>
+                    <p>Beli 1 menu pilihan gratis 1 menu yang sama</p>
+                    <button class="btn-secondary">Lihat Promo</button>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-icon">🚚</div>
+                    <h3>Gratis Ongkir</h3>
+                    <p>Gratis ongkos kirim untuk pembelian minimal Rp 100.000</p>
+                    <button class="btn-secondary">Lihat Promo</button>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-icon">📦</div>
+                    <h3>Bundle Sushi</h3>
+                    <p>Paket hemat 5 jenis sushi dengan harga spesial</p>
+                    <button class="btn-secondary">Lihat Promo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI SECTION -->
+    <section class="testimoni-section" id="testimoni">
+        <div class="container">
+            <h2 class="section-title">Testimoni Pelanggan</h2>
+            <div class="testimoni-grid">
+                <div class="testimoni-card">
+                    <div class="testimoni-avatar">👩‍💼</div>
+                    <h4>Siti Nurhaliza</h4>
+                    <div class="testimoni-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Sushi terbaik yang pernah saya coba! Rasa autentik dan presentasi yang sangat menarik. Pasti pesan lagi!"</p>
+                </div>
+                <div class="testimoni-card">
+                    <div class="testimoni-avatar">👨‍💼</div>
+                    <h4>Budi Santoso</h4>
+                    <div class="testimoni-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Pengiriman cepat, packaging rapi, dan sushi masih fresh. Pelayanan luar biasa! Terima kasih SushiBie."</p>
+                </div>
+                <div class="testimoni-card">
+                    <div class="testimoni-avatar">👩‍🦰</div>
+                    <h4>Rina Wijaya</h4>
+                    <div class="testimoni-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Harga sesuai kualitas, menu beragam, dan stafnya ramah. Ini tempat sushi favorit saya sekarang!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DELIVERY SECTION -->
+    <section class="delivery-section" id="delivery">
+        <div class="container">
+            <h2 class="section-title">Layanan Pengiriman</h2>
+            <div class="delivery-info">
+                <div class="delivery-card">
+                    <h3>🚚 Delivery</h3>
+                    <p>Pesanan dikirim langsung ke rumah Anda</p>
+                    <p class="delivery-time">⏱️ Estimasi: 30-45 menit</p>
+                </div>
+                <div class="delivery-card">
+                    <h3>🏪 Takeaway</h3>
+                    <p>Ambil pesanan di outlet kami</p>
+                    <p class="delivery-time">⏱️ Estimasi: 15-20 menit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>📍 Alamat</h4>
+                    <p>Jl. Sushi Premium No. 123<br>Jakarta Pusat, Indonesia</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📱 Kontak</h4>
+                    <p>WhatsApp: +62 812-3456-7890<br>Telepon: (021) 1234-5678</p>
+                </div>
+                <div class="contact-item">
+                    <h4>🕐 Jam Operasional</h4>
+                    <p>Senin - Minggu: 11:00 - 22:00<br>Libur: Tidak ada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SushiBie 🍣</h4>
+                    <p>Premium sushi modern untuk pengalaman kuliner terbaik Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="#" title="WhatsApp">💬</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="Shopee">🛍️</a>
+                        <a href="#" title="TikTok">🎵</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Pembayaran</h4>
+                    <p>QRIS • VA Bank • OVO • DANA • GoPay • ShopeePay</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SushiBie. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Keranjang kosong</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">Rp 0</span>
+            </div>
+            <button class="btn-checkout" id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- CART OVERLAY -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+            <h2>Checkout</h2>
+            
+            <div class="checkout-section">
+                <h3>Informasi Pengiriman</h3>
+                <input type="text" id="customerName" placeholder="Nama Lengkap" class="form-input">
+                <input type="tel" id="customerPhone" placeholder="Nomor HP" class="form-input">
+                <textarea id="customerAddress" placeholder="Alamat Lengkap" class="form-input"></textarea>
+                <textarea id="customerNote" placeholder="Catatan (opsional)" class="form-input"></textarea>
+            </div>
+
+            <div class="checkout-section">
+                <h3>Pilih Metode</h3>
+                <div class="delivery-options">
+                    <label class="radio-option">
+                        <input type="radio" name="delivery" value="delivery" checked>
+                        <span>🚚 Delivery (Rp 15.000)</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="delivery" value="takeaway">
+                        <span>🏪 Takeaway (Gratis)</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="checkout-section">
+                <h3>Metode Pembayaran</h3>
+                <div class="payment-options">
+                    <button class="payment-btn" data-method="qris">QRIS</button>
+                    <button class="payment-btn" data-method="va">VA Bank</button>
+                    <button class="payment-btn" data-method="transfer">Transfer Bank</button>
+                    <button class="payment-btn" data-method="ovo">OVO</button>
+                    <button class="payment-btn" data-method="dana">DANA</button>
+                    <button class="payment-btn" data-method="gopay">GoPay</button>
+                    <button class="payment-btn" data-method="shopee">ShopeePay</button>
+                </div>
+            </div>
+
+            <div class="checkout-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="summarySubtotal">Rp 0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Pengiriman:</span>
+                    <span id="summaryShipping">Rp 0</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="summaryTotal">Rp 0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAYMENT MODAL -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content payment-modal">
+            <button class="modal-close" id="paymentClose">✕</button>
+            <h2>Metode Pembayaran</h2>
+            
+            <div class="payment-details" id="paymentDetails"></div>
+
+            <div class="payment-actions">
+                <button class="btn-primary" id="confirmPaymentBtn">Konfirmasi Pembayaran</button>
+                <button class="btn-secondary" id="cancelPaymentBtn">Batal</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUCCESS MODAL -->
+    <div class="modal" id="successModal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">✓</div>
+            <h2>Pesanan Berhasil!</h2>
+            <p id="successMessage">Terima kasih telah memesan. Pesanan Anda sedang diproses.</p>
+            <button class="btn-primary" id="successCloseBtn">Kembali ke Beranda</button>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast"></div>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/6281234567890" class="floating-whatsapp" title="Chat WhatsApp">
+        <span>💬</span>
+    </a>
+
+    <script src="script (2).js"></script>
+</body>
+</html>
